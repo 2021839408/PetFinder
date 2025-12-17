@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp">
+
+            <ImageView
+                android:id="@+id/lostPetImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/app_logo"
+                android:scaleType="centerCrop"
+                android:background="#DDDDDD"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/selectPetLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Pet"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/inputPetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pet Name"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/inputPetColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pet Color"
+            android:layout_marginTop="15dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/inputLastSeen"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Last Seen Location" />
+
+            <Button
+                android:id="@+id/btnPickLocation"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Map" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmitLostPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Report"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="@drawable/light_blue_button" />
+
+        <Button
+            android:id="@+id/btnBackHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Home"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:background="@drawable/light_blue_button"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>

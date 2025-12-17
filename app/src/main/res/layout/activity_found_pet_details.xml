@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/petImage"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="#DDDDDD"
+            android:scaleType="centerCrop"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/txtFinderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finder: -"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:id="@+id/txtFinderPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: -"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txtFoundLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location: -"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/btnLocate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Locate"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:background="@drawable/light_blue_button"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/txtFoundTimestamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reported: -"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtAdditionalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Additional Info: -"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/btnContactFinder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Contact Finder"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:background="@drawable/light_blue_button"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Back to List"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:background="@drawable/light_blue_button"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+</ScrollView>

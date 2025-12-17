@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.PetFinder" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="materialButtonStyle">@style/NoTintButtonStyle</item>
+        <item name="buttonStyle">@style/NoTintButtonStyle</item>
+
+    </style>
+
+    <style name="Theme.PetFinder" parent="Base.Theme.PetFinder" />
+
+    <style name="NoTintButtonStyle" parent="@android:style/Widget.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+
+</resources>

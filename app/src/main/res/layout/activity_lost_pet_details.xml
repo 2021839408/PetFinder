@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/petImage"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:background="#DDDDDD"
+            android:scaleType="centerCrop"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/txtPetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pet Name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/txtPetColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Color: -"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtPetBreed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Breed: -"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txtOwnerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Owner: -"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:id="@+id/txtOwnerPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: -"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/btnContactOwner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Contact Owner"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:background="@drawable/light_blue_button"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Back to List"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:background="@drawable/light_blue_button"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+</ScrollView>
