@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "383293334530-bu7ssus7ii36kkt79sdmh9sb6bltaem5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.petfinder",
+            "certificate_hash": "0d1124019ca97d33fcabb1986ef1962aa5ad85b0"
+          }
+        },
+        {
+          "client_id": "383293334530-m5lul002cvnhl8ndb1a5a4o56qaera76.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.petfinder",
+            "certificate_hash": "15d2c93ff8aaa0520df5c69396fa24e7683c8e36"
+          }
+        },
+        {
           "client_id": "383293334530-6vtr5chr06hbn3jru0548u4l3s9vith6.apps.googleusercontent.com",
           "client_type": 3
         }

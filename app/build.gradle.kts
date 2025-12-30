@@ -17,13 +17,28 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("D:/PetFinder/petfinder-keystore.jks")
+            storePassword = "qwer1234"
+            keyAlias = "key0"
+            keyPassword = "qwer1234"
+        }
+    }
+
     buildTypes {
         release {
+            signingConfig = signingConfigs.getByName("release")
+
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+
+        debug {
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 
@@ -34,23 +49,25 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+
     implementation(libs.firebase.database)
     implementation(libs.firebase.auth)
     implementation(libs.firebase.storage)
+
     implementation(libs.credentials)
     implementation(libs.credentials.play.services.auth)
     implementation(libs.googleid)
     implementation(libs.play.services.auth)
-    implementation(libs.play.services.maps)
-    implementation(libs.glide)
-    implementation(libs.play.services.location)
-    annotationProcessor(libs.glideCompiler)
 
+    implementation(libs.play.services.maps)
+    implementation(libs.play.services.location)
+
+    implementation(libs.glide)
+    annotationProcessor(libs.glideCompiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
